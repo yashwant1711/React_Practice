@@ -2,9 +2,6 @@ import React from 'react'
 
 function Result({userAnswer, questions, resetQuiz=()=>{}}) {
     const score = userAnswer.filter((answer) => answer).length
-    const another = userAnswer.filter((answer) => answer).length
-    console.log(another)
-    console.log(userAnswer)
   return (
     <div className='results'>
       <h2>Results</h2>
