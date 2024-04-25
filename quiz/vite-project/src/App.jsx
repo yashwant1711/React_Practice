@@ -10,9 +10,10 @@ function App() {
   const[userAnswer, setUserAnswer] = useState([])
 
   const handelAnswer = (isCorrect) => {
-    console.log("i am connected")
+    // console.log("i am connected")
     setCurrentQuestion(curruentQuestion + 1)
     setUserAnswer([...userAnswer, isCorrect])
+   
   }
 
   const resetQuiz = () => {
