@@ -7,7 +7,8 @@ const Notes = ({notes = [], setNotes = () => {}}) => {
   useEffect(() => {
     // localstorage logic
     const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
-
+    
+    // whenever note changes it will run
     const updatedNotes = notes.map((note) => {
       const savedNote = savedNotes.find((n) => n.id === note.id);
       if (savedNote) {
